@@ -27,6 +27,10 @@ prost-types = "0.11.6"
 tonic = { version = "0.8.3", features = ["tls-roots", "gzip"] }
 tonic-build = { version = "0.8.4", features = ["prost"] }
 
+[profile.release]
+opt-level = 3
+rpath = true
+
 # Incremental compilation on Rust 1.58 causes an ICE on build. As soon as graph node builds again, these can be removed.
 [profile.test]
 incremental = false
