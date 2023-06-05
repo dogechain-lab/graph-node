@@ -635,7 +635,7 @@ impl Web3Provider {
 }
 
 const PROVIDER_FEATURES: [&str; 3] = ["traces", "archive", "no_eip1898"];
-const DEFAULT_PROVIDER_FEATURES: [&str; 2] = ["traces", "archive"];
+const DEFAULT_PROVIDER_FEATURES: [&str; 2] = ["archive", "no_eip1898"];
 
 impl Provider {
     fn validate(&mut self) -> Result<()> {

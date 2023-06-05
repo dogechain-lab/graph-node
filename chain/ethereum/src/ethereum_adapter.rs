@@ -68,7 +68,7 @@ pub struct EthereumAdapter {
 lazy_static! {
     pub static ref ETH_CALL_GAS: u32 = std::env::var("GRAPH_ETH_CALL_GAS")
                                         .map(|s| s.parse::<u32>().expect("invalid GRAPH_ETH_CALL_GAS env var"))
-                                        .unwrap_or(50_000_000);
+                                        .unwrap_or(30_000_000);
 }
 
 impl CheapClone for EthereumAdapter {
