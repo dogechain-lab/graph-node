@@ -1,7 +1,7 @@
 version: '3'
 services:
   graph-node:
-    image: "ghcr.io/dogechain-lab/graph-node:v0.30.0"
+    image: "dogechainlab/graph-node:v0.30.0"
     ports:
       - '8000:8000'
       - '8001:8001'
